@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RaceLeaderboardPageRoutingModule } from './race-leaderboard-routing.module';
 
 import { RaceLeaderboardPage } from './race-leaderboard.page';
+import {PipeModule} from "../../pipes/pipe.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RaceLeaderboardPageRoutingModule
+    RaceLeaderboardPageRoutingModule,
+    PipeModule
   ],
   declarations: [RaceLeaderboardPage]
 })

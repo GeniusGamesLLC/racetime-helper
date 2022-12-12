@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'race-leaderboard',
     loadChildren: () => import('./pages/race-leaderboard/race-leaderboard.module').then( m => m.RaceLeaderboardPageModule)
+  },
+  {
+    path: 'race-leaderboard/:id',
+    loadChildren: () => import('./pages/race-leaderboard/race-leaderboard.module').then( m => m.RaceLeaderboardPageModule)
   }
 ];
 
